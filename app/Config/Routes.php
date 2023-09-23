@@ -6,4 +6,5 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->get('/', 'Home::index');
-$routes->get('/badeth', 'Home::badeth');
+$routes->get('/product', 'ProductController::badeth');
+$routes->get('/product/(:any)', 'ProductController::product/$1'); 
